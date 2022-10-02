@@ -1,0 +1,301 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto+Condensed:ital,wght@0,400;1,300&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    font-family: 'Roboto Condensed', sans-serif;
+    scroll-behavior: smooth;
+}
+
+.headding{
+    height: 200px;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 40px;
+}
+
+.navbar{
+    height: 48px;
+    width: 100%;
+    position: fixed;
+    background-color: black;
+    opacity: 75%;
+    transition: 0.5s;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar:hover{
+    height: 55px;
+    transition: 0.5s;
+}
+
+.navbar ul {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.navbar ul li{
+    list-style: none;
+    margin-inline: 20px;
+}
+
+.navbar ul li a{
+    text-decoration: none;
+    color: white;
+}
+
+.navbar ul li a:hover{
+    color: rgb(145, 204, 255);
+}
+
+.navbar ul li img{
+    width: 40px;
+    height: 40px;
+}
+
+/* .navbar ul li img:hover{
+    
+} */
+
+.home{
+    display: block;
+    height: 600px;
+    width: 100%;
+}
+.home img{
+    width: 100%;
+    height: 100%;
+}
+
+.work{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(27, 27, 27); 
+}
+
+.work .headding{
+    color: white;
+    background: rgb(27, 27, 27);
+}
+
+.about{
+    height: 600px;
+}
+
+.products{
+    height: 600px;
+    width: 100%;
+    background-color: rgb(27, 27, 27); 
+}
+
+.products .headding{
+    color: white;
+    background: rgb(27, 27, 27);
+}
+
+.contact{
+    height: 350px;
+    width: 100%;
+}
+
+.contact .headding{
+    height: 100px;
+    /* background-color: rgb(76, 74, 74); */
+}
+
+.contact .form{
+    display: flex;
+    height: 150px;
+    margin: 0 5%;
+    /* background-color: rgb(97, 97, 97); */
+    justify-content: center;
+    align-items: center;
+}
+
+.contact .socials{
+    /* margin-top: 350px; */
+    height: 100px;
+    background: rgb(255, 255, 255);
+    color: black;
+}
+
+.contact .socials ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+    justify-content: center;
+}
+
+.contact .socials .fa-brands{
+    width: 50px;
+    font-size: 50px;
+    text-align: center;
+    text-decoration: none;
+    margin-inline: 50px;
+}
+
+.contact .socials .fa-twitter{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.contact .socials .fa-twitter:hover{
+    color: rgb(82, 82, 82);
+}
+
+.contact .socials .fa-telegram{
+    background-color: rgb(255, 255, 255);
+    color: black;
+}
+
+.contact .socials .fa-telegram:hover{
+    color: rgb(82, 82, 82);
+}
+
+.contact .socials .fa-linkedin{
+    color: rgb(0, 0, 0);
+}
+
+.contact .socials .fa-linkedin:hover{
+    color: rgb(82, 82, 82);
+}
+
+.contact .socials .fa-youtube{
+    color: rgb(0, 0, 0);
+}
+
+.contact .socials .fa-youtube:hover{
+    color: rgb(82, 82, 82);
+}
+
+
+
+.footer{
+    height: 30px;
+}
+
+.footer h2{
+   display: flex;
+   justify-content: center; 
+   font-size: 18px;
+   font-weight: 2;
+}
+
+.footer h2 a{
+    margin: 0 5px;
+    color: rgb(0, 138, 206);
+}
+
+@media only screen and (max-width:600px){
+
+    .navbar{
+       width: 100vw;
+    }
+    
+    .navbar ul {
+        display: flex;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .navbar ul li{
+    list-style: none;
+    margin-inline: 3%;
+    }
+
+    .headding{
+        height: 100px;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+    }
+
+    .home{
+        display: block;
+        height: 100%;
+        width: 100%;
+    }
+
+    .home img{
+        width: 100%;
+        height: 100%;
+    }
+
+    .contact{
+        height: 350px;
+        width: 100%;
+    }
+    
+    .contact .form{
+        display: flex;
+        height: 75px;
+        margin: 0 5%;
+        /* background-color: rgb(97, 97, 97); */
+        justify-content: center;
+    }
+    
+    .contact .socials{
+        /* margin-top: 350px; */
+        height: 75px;
+        background: rgb(255, 255, 255);
+        color: black;
+    }
+    
+    .contact .socials ul{
+        display: flex;
+        list-style: none;
+        align-items: center;
+        justify-content: center;
+    }
+    
+    .contact .socials .fa-brands{
+        width: 50px;
+        font-size: 50px;
+        text-align: center;
+        text-decoration: none;
+        margin-inline: 20px;
+        padding-top: 45px;
+    }
+    
+    .contact .socials .fa-twitter{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    
+    .contact .socials .fa-twitter:hover{
+        color: rgb(82, 82, 82);
+    }
+    
+    .contact .socials .fa-telegram{
+        background-color: rgb(255, 255, 255);
+        color: black;
+    }
+    
+    .contact .socials .fa-telegram:hover{
+        color: rgb(82, 82, 82);
+    }
+    
+    .contact .socials .fa-linkedin{
+        color: rgb(0, 0, 0);
+    }
+    
+    .contact .socials .fa-linkedin:hover{
+        color: rgb(82, 82, 82);
+    }
+    
+    .contact .socials .fa-youtube{
+        color: rgb(0, 0, 0);
+    }
+    
+    .contact .socials .fa-youtube:hover{
+        color: rgb(82, 82, 82);
+    }
+    
+    
+}
